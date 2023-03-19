@@ -177,7 +177,8 @@ export const deleteOffer: RequestHandler = async (req, res, next) => {
 
 		await offer.remove();
 
-		res.status(204);
+		res.sendStatus(204);
+
 	} catch (error) {
 		next(error);
 	}

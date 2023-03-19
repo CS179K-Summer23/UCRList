@@ -40,6 +40,7 @@ const FavoriteOffers = () => {
 	async function deleteFavoriteOffer(offer: OfferModel) {
 		try {
 			await favoriteOffersApi.deleteFavorite(offer._id);
+			console.log("setting offer")
 			setOffers(
 				offers.filter((existingOffer) => existingOffer._id !== offer._id)
 			);
@@ -66,6 +67,11 @@ const FavoriteOffers = () => {
 
 	return (
 		<>
+
+			{offers.length > 0
+                        ? <></>
+                        : <p>You heven't any favorite offers yet</p>
+            }
 
 			<Row xs={1} md={2} xl={4} className='g-4'>
 				{offers.map((offer) => (
