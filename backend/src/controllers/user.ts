@@ -5,7 +5,7 @@ import Token from '../models/token';
 import bcrypt from 'bcrypt';
 import nodemailer from 'nodemailer';
 import * as crypto from 'crypto';
-import { ObjectId } from 'mongodb';
+//import { ObjectId } from 'mongodb';
 
 // import env from '../util/validateEnv';
 
