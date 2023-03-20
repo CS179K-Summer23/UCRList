@@ -1,15 +1,15 @@
-import {
-	sum,
-	sum1,
-	getVerifiedUser2,
-	login,
-	getUser,
-} from '../controllers/user';
 import { MongoClient } from 'mongodb';
 //import { MongoMemoryServer } from 'mongodb-memory-server';
 import mongoose from 'mongoose';
 import UserModel from '../models/user';
 import httpMocks from 'node-mocks-http';
+/*import {
+	sum,
+	sum1,
+	getVerifiedUser2,
+	login,
+	getUser,
+} from '../controllers/user';*/
 
 describe('User Test', () => {
 	let connection;
